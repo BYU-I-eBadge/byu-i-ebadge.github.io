@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="minibadge.css">
+<meta name="generator" content="ReText 8.1.0">
+<title>tutorial</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>Minibadge Tutorial</h1>
+<p>This tutorial is designed for KiCad 9.0.3.
+Download the latest version of KiCad from <a href="https://www.kicad.org/download/">kicad.org</a>.
+A KiCad configuration with metric unit settings is assumed.</p>
+<h2>Download Minibadge Symbols and Footprints</h2>
+<p>Navigate to <a href="https://github.com/BYU-I-eBadge/minibadge">github.com/BYU-I-eBadge/minibadge</a> and go to the latest release.</p>
+<p><img alt="minibadge GitHub page" src="github_page.png"></p>
+<p>The KiCad symbol and footprint variants can be found on the releases page. On the latest release<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, download <code>minibadge_full.kicad_sym</code> and <code>MiniBadge_Full.kicad_mod</code> for this tutorial. Save these in a folder that can be navigated to later.</p>
+<p><img alt="minibadge release" src="releases_page.png"></p>
+<h2>Design in KiCad</h2>
+<h3>Initial Project Setup</h3>
+<p>Make and open a new project in KiCad. Save it in a directory of your choice.</p>
+<p><img alt="hint make new project" src="open_project.png"></p>
+<p>After making the new project, the symbol and footprint need to be added so they are accessible from library browsers. Navigate to <code>Preferences</code> on the toolbar.</p>
+<p><img alt="go to preferences" src="preferences.png"></p>
+<p>Then, go to <code>Manage Symbol Libraries</code>.</p>
+<p><img alt="go to manage symbol libraries" src="manage_symbols_highlighted.png"></p>
+<p>A new window will appear. Navigate to the <code>Project Specific Libraries</code> tab to add the Minibadge symbol to this project only.</p>
+<p><img alt="switch tabs" src="sym_switch_tabs.png"></p>
+<p>Once switched to the correct tab, click the button with the folder icon to open the downloaded symbol library.
+<strong>For KiCad symbols, open the <code>*.kicad_sym</code> file to add the library.</strong></p>
+<p><img alt="add symbol library button" src="add_sym_library.png">
+<img alt="point out symbol libraries are files" src="sym_is_file.png"></p>
+<p>Press OK to save changes and close the window for managing symbol libraries. In preferences again, navigate to manage footprint libraries.</p>
+<p><img alt="go to manage footprint libraries" src="manage_footprint_highlighted.png"></p>
+<p>Similar to the window for managing symbol libraries, navigate to the <code>Project Specific Libraries</code> tab.
+Click the button with the folder icon to open the downloaded footprint library.
+<strong>For KiCad footprints, open the folder that contains <code>*.kicad_mod</code> file(s) to add the library. This can reside in the same directory as your symbol library and other files; KiCad will only inventory the <code>*.kicad_mod</code> files from the selected folder.</strong></p>
+<p><img alt="add footprint library button" src="add_footprint_lib.png">
+<img alt="point out footprint libraries are folders" src="footprint_is_directory.png"></p>
+<h3>Schematic</h3>
+<p>Enter the schematic editor by pressing the icon in the main window.</p>
+<p><img alt="hint enter schematic editor" src="enter_schematic_editor.png"></p>
+<p>A blank schematic will be shown. Start by placing symbols by pressing the highlighted icon or using the shortcut (A).</p>
+<p><img alt="initial screen hint add symbol" src="initial_screen_add.png"></p>
+<p>Click anywhere on the schematic. A new window will appear that will allow for selecting symbols for components.
+Search for the minibadge symbol that was downloaded. Select the one that looks like the one pictured, and press OK to close the window.</p>
+<p><img alt="select symbol window minibadge example" src="select_symbol.png"></p>
+<p>The symbol should appear attached to your cursor. Click to place the symbol. If the symbol still appears to follow your cursor after placement, press the ESC key to release your cursor; this is a side effect of having <code>Place repeated copies</code> selected.</p>
+<p><img alt="symbol on schematic" src="place_in_schematic.png"></p>
+<p>For this tutorial, we will design a basic minibadge that has a simple LED circuit.
+Add symbols for an LED and resistor to the schematic by following a process similar to placing the minibadge.</p>
+<p><img alt="add additional symbols" src="place_more_symbols.png"></p>
+<p>Now that all the symbols are placed, wires need to be added to connect the symbols together.
+Wire the LED anode (the side with the triangle base) to the <code>+3V3</code> pin on the minibadge symbol.
+Wire the LED cathode (the side with the flat line) to any side of R1.
+Wire the unconnected side of R1 to the GND pin of the minibadge symbol.
+<strong>It is important that the circuit in your schematic is correct. It is easier to correct schematic issues before starting PCB design, rather than after.</strong></p>
+<p><img alt="add wire" src="select_wire.png"></p>
+<p>For completeness, the circuit should have its used power paths (3.3V, Ground) labeled and attached to the schematic.
+Click on the icon to place power symbols or use the shortuct (P).</p>
+<p><img alt="add power symbols" src="select_power.png"></p>
+<p>A window will appear that operates identical to picking symbols for components.
+For our ground (0V), use the <code>GND</code> symbol. Every pin that says <code>GND</code> on the minibadge should connect to one of these.</p>
+<p><img alt="select ground symbol window" src="select_gnd_symbol.png"></p>
+<p>Similarly, power symbols should be placed for 3.3V. These should go on the pins labelled <code>3V3+</code> and <code>+3V3</code>.</p>
+<p><img alt="select 3.3V symbol window" src="select_3V3_symbol.png"></p>
+<p>The schematic design is nearly complete. Click on the icon to place "no connect flags" on the remaining unused minibadge pins.</p>
+<p><img alt="select no connect flags" src="select_no_connect_flags.png"></p>
+<p>Annotate the schematic so that the design can be checked for errors and be imported to the PCB editor.</p>
+<p><img alt="select annotate schematic" src="select_annotate_schem.png"></p>
+<p>Click <code>Annotate</code> on the window that appears. The default settings in this window should work for this design.
+<strong>Note that this overwrites all reference designators. This may not be ideal for different designs.</strong></p>
+<p><img alt="annotate window" src="annotate_dialog.png"></p>
+<p>Now that the schematic is fully annotated, the Electrical Rules Checker (ERC) should now be run.</p>
+<p><img alt="select ERC" src="select_electrical_rules_checker.png"></p>
+<p>Click <code>Run ERC</code> on the window that appears.</p>
+<p><img alt="run ERC" src="erc_dialog_run.png"></p>
+<p>As of time of writing<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, running the ERC will result in certain warnings and errors that are safe to ignore.
+<strong>If there are additional errors, it is likely there is an actual error in the design that needs troubleshooting.</strong></p>
+<p><img alt="ERC false errors" src="note_on_false_erc_errors.png"></p>
+<p>After verifying the the design is electrically sound, click the icon to assign footprints to all symbols in the schematic.</p>
+<p><img alt="select assign footprints" src="select_assign_footprints.png"></p>
+<p>A window will appear that will assist with assigning footprints to each part.
+Footprints are the way that components will physically appear and connect to the board.
+When picking footprints consider whether the part is SMD<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> or THT<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.
+<strong>Make sure the package<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> matches the actual components.</strong>
+For this tutorial, footprints for a 5mm LED and small through-hole resistor are used.</p>
+<p><img alt="used footprints" src="used_example_footprints.png"></p>
+<p>Save and close the schematic editor.</p>
+<h3>PCB Layout</h3>
+<p>From the main window, enter the PCB editor by clicking on the icon.</p>
+<p><img alt="select PCB editor" src="enter_pcb_editor.png"></p>
+<p>A blank PCB design will appear. Click the icon to update the PCB from the schematic or use the keyboard shortcut (F8).</p>
+<p><img alt="select update PCB from schematic" src="initial_pcb_update_from_schem.png"></p>
+<p>A window will appear. Use the defaults and click <code>Update PCB</code>.</p>
+<p><img alt="update PCB window" src="update_pcb_dialog.png"></p>
+<p>Components will appear on the PCB editor. Close the window an click near the center to place the mess of footprints.</p>
+<p><img alt="see added footprints to place" src="see_added_footprints.png"></p>
+<p>Place the LED and resistor inside the minibadge footprint by clicking and dragging.
+The resistor and LED should be placed on the back of the minibadge.
+With the component selected, either:</p>
+<ol>
+<li>Right click, then select <code>Change Side/Flip</code>.</li>
+<li>Press <code>F</code>.</li>
+</ol>
+<p><img alt="flip components hint" src="flip_components.png"></p>
+<p>After arranging components, the design should appear similar to this:</p>
+<p><img alt="example footprint placement" src="after_footprint_placement.png"></p>
+<p>Again, note that the resistor and LED are placed on the back.
+Minibadges typically are designed so that light can pass through the PCB.
+In order for this to work, the design needs an area that prevents copper layers and soldermask from existing in a certain exclusion zone.</p>
+<p>Click on the icon for drawing rule areas.</p>
+<p><img alt="select draw rule area" src="select_rule_area.png"></p>
+<p>Then, <strong>very intentionally pick a point on the PCB that will be the starting point to draw a polygon for the rule area.</strong>
+After clicking a point on the PCB, a window will appear.
+Select the copper layers and all relevant keepout rules.
+<strong>Do not select the footprint keepout rule because that will include the minibadge itself. Selecting it will cause errors later.</strong></p>
+<p><img alt="rule area window" src="rule_area_dialog.png"></p>
+<p>The default clearance rules are too strict for the minibadge and will throw errors. Fix this by entering the <code>Board Setup</code>.</p>
+<p><img alt="select board setup" src="select_board_setup.png"></p>
+<p>Select <code>Constraints</code> from the categories available. Then, set "Copper to edge clearance" to <code>0.35 mm</code>.
+Press OK to close the window.</p>
+<p><img alt="board setup window" src="board_setup_dialog.png"></p>
+<p>Now that there are constraints and keepouts in place, areas for ground and power planes can be drawn.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></p>
+<p>First, make sure a copper layer is selected.
+Then, select the <code>Draw Filled Zones</code> tool, then select one of the corners of the PCB on or outside the <code>Edge.Cuts</code> layer.</p>
+<p><img alt="select draw filled zones" src="select_draw_filled_zones.png"></p>
+<p>After clicking the initial point to start the polygon drawing for the filled zone, a window will appear.
+Select the front copper layer.
+Select the <code>GND</code> net.
+Optionally name the zone "Ground plane".
+Press OK when finished.</p>
+<p><img alt="ground plane properties window" src="ground_plane_properties.png"></p>
+<p>After drawing the area for the ground plane, repeat the process for the power plane.
+The power plane will reside on the rear copper layer.</p>
+<p><img alt="power plane properties window" src="power_plane_properties.png"></p>
+<p>Press <code>B</code> to refill all copper zones. This will automatically route all connections for power and ground.</p>
+<p>Only one connection remains. Select the icon to <code>Route Single Track</code> or press the shortcut <code>X</code>.</p>
+<p><img alt="select route track" src="select_route_traces.png"></p>
+<p>Click on one of the pads that has a faint line that connects two of them.
+The design will appear to be faded, except for the track currently being routed.
+Click on the other pad to connect the devices together.</p>
+<p><img alt="draw track hint" src="draw_track.png"></p>
+<p>Make sure to refill the zones so that the track is isolated from either plane.
+Press <code>B</code> to refill all copper zones.</p>
+<p><img alt="refill zone hint" src="refill_zone.png"></p>
+<p>A silkscreen design should be placed over the light passthrough window.
+Designs can be made from images.
+Go back to the main KiCad window without exiting the PCB editor, then select the icon for the image converter.</p>
+<p><img alt="select image converter" src="select_image_converter.png"></p>
+<p>A new window will open.
+Select <code>Load Source Image</code> and navigate to the image that will be placed on the PCB silkscreen.</p>
+<p><img alt="select load image source" src="select_load_source_image.png"></p>
+<p>The image will likely not fit within the desired dimension of the window on the PCB.
+Return to the PCB editor.
+Use the <code>Measure</code> tool to record the constraining dimension (whichever is smaller).</p>
+<p><img alt="get dimensions of window hint" src="get_dimensions_of_window.png"></p>
+<p>Return to the image converter window.
+Make sure to dimension the image to fit in the window using the constraining dimension (height in this case).
+If the source image isn't black and white, adjust the threshold and negative.
+<strong>Make sure the output format is a footprint on the <code>F.Silkscreen</code> layer.</strong>
+Press <code>Export to Clipboard</code> when done.</p>
+<p><img alt="export image window" src="export_image_to_silk.png"></p>
+<p>Return to the PCB editor.
+Paste the image using <code>Ctrl+V</code> or right click and paste.
+Click the place the silkscreen should reside.
+An additional reference designator will be pasted alongside the image.
+Select it, and press <code>Del</code> to delete it.</p>
+<p><img alt="delete ref designator for vanity image" src="delete_ref_for_decor.png"></p>
+<p>Light will not ideally escape through the light passthrough window yet.
+Soldermask still will be applied over the window unless it is drawn over on the Mask layers.</p>
+<p>Select the <code>F.Mask</code> layer then the <code>Draw Rectangles</code> tool.
+After drawing the rectangle in the appropriate spot (over the rule area drawn earlier), select it.
+Open the properties by right clicking and clicking <code>Properties</code> or using the shortcut key <code>E</code>.</p>
+<p><img alt="select rectangle properties" src="rectangle_properties.png"></p>
+<p>In the properties, make the rectangle a filled shape.
+Double check the layer is correct.</p>
+<p><img alt="rectangle properties front window" src="rectangle_properties_fill_shape.png"></p>
+<p>Do the same process for the rear mask.
+Ensure the properties are similar to the front mask, especially the filled shape property.</p>
+<p><img alt="rectangle properties back window" src="repeat_mask_delete_rear.png"></p>
+<p>Verify the design using the Design Rules Checker (DRC).
+Click on the DRC icon.</p>
+<p><img alt="select DRC" src="select_drc.png"></p>
+<p>A new window will appear.
+Select <code>Run DRC</code>.</p>
+<p><img alt="DRC window" src="drc_dialog.png"></p>
+<p><strong>No errors should appear.</strong>
+There should be a warning for the intentionally placed silkscreen clipped by soldermask.
+It can be safely ignored.</p>
+<p><img alt="DRC safe warnings" src="safe_drc_warning.png"></p>
+<h1>Export PCB for Fabrication</h1>
+<p>Navigate to the <code>Gerbers</code> fabrication output.</p>
+<p><img alt="select gerber output" src="select_gerber_output.png"></p>
+<p>Ensure all needed layers are selected.
+Select the output directory. Directories relative to the KiCad project are allowed.
+After selecting the output directory, click <code>Plot</code> to generate the gerber files for each layer.
+Afterward, select <code>Generate Drill Files</code>.</p>
+<p><img alt="gerber plot window" src="plot_dialog.png"></p>
+<p>Another window will appear on top of the plot window.
+Ensure the output folder for the drill files is the same as the gerber output directory.
+Then, select <code>Generate</code>.</p>
+<p><img alt="generate drill window" src="gen_drill_dialog.png"></p>
+<p>Close the drill file generation window.
+Navigate to the folder with the gerber and drill files.
+The easiest way to do this is by using the icon to open the folder with the system file manager.</p>
+<p><img alt="open directory shortcut" src="plot_open_dir.png"></p>
+<p>Use any method to zip all of the files in the directory to make a single output file.
+This zipped file will be used for fabricating the actual PCB.</p>
+<p><img alt="zip output files" src="zip_output_files.png"></p>
+<p>These instructions assume using JLCPCB as a PCB manufacturer.
+This process should be similar for other companies that do PCB fabrication.</p>
+<p>On <a href="https://jlcpcb.com">jlcpcb.com</a>, upload the zip file containing your gerber and drill files.</p>
+<p><img alt="JLCPCB upload" src="upload_to_jlcpcb.png"></p>
+<p>After a successful upload, a preview, cost estimate, and settings will appear.</p>
+<p><img alt="preview JLCPCB" src="post_upload_jlcpcb.png"></p>
+<p>The most relevant settings for minibadge designs are:</p>
+<ul>
+<li>PCB Thickness</li>
+<li>PCB Color</li>
+<li>Silkscreen Color</li>
+<li>Mark on PCB</li>
+</ul>
+<p>The thickness of the PCB affects parasitic capacitance.
+Capacitance decreases inversely with thickness.</p>
+<p>Assuming that FR-4 has a relative permittivity of 4.5:</p>
+<table>
+<thead>
+<tr>
+<th>Thickness (mm)</th>
+<th>A (mm^2)</th>
+<th>Capacitance (pF)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.4</td>
+<td>400</td>
+<td>39.84</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>400</td>
+<td>26.56</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>400</td>
+<td>19.92</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>400</td>
+<td>15.94</td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>400</td>
+<td>13.28</td>
+</tr>
+<tr>
+<td>1.6 (Default)</td>
+<td>400</td>
+<td>9.96</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>400</td>
+<td>7.97</td>
+</tr>
+</tbody>
+</table>
+<p>The default thickness shouldn't cause problems.</p>
+<p>Certain PCB colors may take longer to manufacture.</p>
+<p>Make sure to select <code>Remove Mark</code> so that a JLCPCB order number doesn't appear on the minibadge.</p>
+<p><img alt="JLCPCB order settings" src="order_settings.png"></p>
+<p>The minibadge PCB can now be ordered.</p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><em>2025-07-21</em>. Latest minibadge version 2.1c at time of writing. KiCad Version 9.0.3. Tutorial shown on Arch Linux/KDE Plasma.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><em>Surface-Mount Device.</em> These components are typically smaller and may be hard to solder by hand.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><em>Through-Hole Technology.</em> These components are larger and typically easier to solder by hand.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>The package determines the physical dimensions of a device.
+For simple SMD devices, standard sizes may be used, such as 0603, or 1206.
+For THT devices, ensure the dimensions match or will be compatible.
+This involves verifying pitch between pins or other dimensions.
+<strong>If a datasheet is available, these dimensions should be available and able to be matched with a KiCad footprint.</strong>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Normally, it is a bad idea to have a ground <em>and</em> a power plane on a two layer PCB.
+However, because there is only one connection other than power and ground and no rapid switching (like PWM signals),
+this is acceptable.
+Note that other designs may find it favorable to omit the power plane.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+</body>
+</html>

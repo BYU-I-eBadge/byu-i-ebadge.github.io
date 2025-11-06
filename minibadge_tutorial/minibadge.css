@@ -1,0 +1,168 @@
+/* === Global Layout === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #222;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === Headings === */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #333;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+/* === Paragraphs & Lists === */
+p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* === Tables === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid #c3c3c3;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+thead th {
+  background-color: #e6e6e6;
+}
+
+/* === Images === */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 1rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* === Code and Footnotes === */
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f3f3f3;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+sup {
+  font-size: 0.75rem;
+}
+
+.footnote-ref {
+  text-decoration: none;
+}
+
+.footnote {
+  font-size: 0.85rem;
+  color: #444;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+/* === Tips and Warnings === */
+strong {
+  font-weight: 600;
+}
+
+strong.warning {
+  color: #b30000;
+}
+
+strong.note {
+  color: #005cbf;
+}
+
+/* === Buttons and UI-Like Elements === */
+button, .btn {
+  background-color: #005cbf;
+  color: white;
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background-color: #004999;
+}
+
+/* === Print Styles === */
+@media print {
+  body {
+    background: none;
+    color: black;
+  }
+
+  img {
+    box-shadow: none;
+    border: none;
+  }
+
+  .btn, nav, footer {
+    display: none;
+  }
+}
+
+/* === Responsive Helpers === */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+}
