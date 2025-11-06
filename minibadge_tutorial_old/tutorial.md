@@ -127,7 +127,7 @@ As of time of writing[^1], running the ERC will result in certain warnings and e
 
 After verifying the the design is electrically sound, click the icon to assign footprints to all symbols in the schematic.
 
-![select assign footprints](select_assign_footprints.png)
+![select assign footprints](../imgs/minibadge_tutorial_old/select_assign_footprints.png)
 
 A window will appear that will assist with assigning footprints to each part.
 Footprints are the way that components will physically appear and connect to the board.
@@ -310,7 +310,7 @@ Select `Run DRC`.
 There should be a warning for the intentionally placed silkscreen clipped by soldermask.
 It can be safely ignored.
 
-![DRC safe warnings](safe_drc_warning.png)
+![DRC safe warnings](../imgs/minibadge_tutorial_old/safe_drc_warning.png)
 
 # Export PCB for Fabrication
 
@@ -347,7 +347,7 @@ This process should be similar for other companies that do PCB fabrication.
 
 On [jlcpcb.com](https://jlcpcb.com), upload the zip file containing your gerber and drill files.
 
-![JLCPCB upload](upload_to_jlcpcb.png)
+![JLCPCB upload](../imgs/minibadge_tutorial_old/upload_to_jlcpcb.png)
 
 After a successful upload, a preview, cost estimate, and settings will appear.
 
