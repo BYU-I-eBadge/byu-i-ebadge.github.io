@@ -1,2 +1,2 @@
-# e-badge_gh-pages
+# BYU-I e-Badge Project
 Github Pages for the BYU-I e-Badge Project
