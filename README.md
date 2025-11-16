@@ -2,6 +2,7 @@
 Github Pages for the BYU-I e-Badge Project
 
 [e-Badge Project Repository](https://github.com/BYU-I-eBadge/e-badge)
+
 [Minibadge Project Repository](https://github.com/BYU-I-eBadge/minibadge)
 
 
