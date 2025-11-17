@@ -92,6 +92,12 @@ Enter the schematic editor by pressing the icon in the main window.
 
 A blank schematic will be shown. Start by placing symbols by pressing the highlighted icon or using the shortcut (A).
 
+----
+Below is content that still needs to be updated.
+
+----
+
+
 ![initial screen hint add symbol](../imgs/minibadge_tutorial_old/initial_screen_add.png)
 
 Click anywhere on the schematic. A new window will appear that will allow for selecting symbols for components.
