@@ -3,7 +3,6 @@ Github Pages for the BYU-I e-Badge Project
 
 [e-Badge Project Repository](https://github.com/BYU-I-eBadge/e-badge)
 - [e-Badge Pinouts](https://github.com/BYU-I-eBadge/e-badge/blob/main/docs/Pinout.md)
-</br>
 
 [Minibadge Project Repository](https://github.com/BYU-I-eBadge/minibadge)
 
