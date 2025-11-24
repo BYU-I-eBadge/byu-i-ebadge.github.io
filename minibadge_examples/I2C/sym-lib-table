@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Minibadge")(type "KiCad")(uri "${KIPRJMOD}/minibadge_full.kicad_sym")(options "")(descr ""))
+)
