@@ -10,7 +10,7 @@ Github Pages for the BYU-I e-Badge Project
 ## Tutorials:
 
 ### Minibadge Tutorials:
-- [LED Tutorial](/minibadge_tutorial/tutorial) (Incomplete)
+- [LED Tutorial](/minibadge_tutorial/tutorial)
 - [I2C Tutorial](/minibadge_tutorial_i2c/tutorial) (Todo)
 - [Old Tutorial](/minibadge_tutorial_old/tutorial)
 
