@@ -457,3 +457,5 @@ Make sure to select `Remove Mark` so that a JLCPCB order number doesn't appear o
 Congratulations! You have finished designing your very own minibadge PCB! The minibadge PCB can now be ordered.
 
 > [Go to Home](../README.md)
+
+---
