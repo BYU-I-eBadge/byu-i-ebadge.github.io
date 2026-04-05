@@ -19,7 +19,9 @@
           "checksum": "SHA-256:6e317f9b5d2b0a28d647852f75d472b38b04644357cfdd5af1b100e908849d9a",
           "size": "26535",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -39,7 +41,9 @@
           "checksum": "SHA-256:1824f8cbca5860897711f6b18722d327b8ab6a3079ff03aeba817e673bd378f6",
           "size": "26452",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -59,7 +63,9 @@
           "checksum": "SHA-256:d41e70fb772f27b04bdcd795c0fbe01711bc9e732f0bc9e3dc0e5028b646bb36",
           "size": "26456",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -79,7 +85,9 @@
           "checksum": "SHA-256:ba1a939400c65c5403b50ba6879d632ebe6d1ec0006b6898a5d586a23b28e6f0",
           "size": "26458",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -99,7 +107,9 @@
           "checksum": "SHA-256:2d46864c6d4750c44cf394a2401460f2d7092343ae4c40e37cac7bd2807d9b58",
           "size": "26458",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -119,7 +129,9 @@
           "checksum": "SHA-256:312271fed3d2eaf804e43eb6d755eebbb1e2a210166d96644db0372d27553afd",
           "size": "34604",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -139,7 +151,9 @@
           "checksum": "SHA-256:bc7d397295682ed70091cde79b36e36cf122b78f83d208fc409e49dd4ed6c03a",
           "size": "40522",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -159,7 +173,9 @@
           "checksum": "SHA-256:973a443c327ba72806d98e4490821ac7b14cdbf0a54373fd5f4e5b75a4ef684f",
           "size": "40727",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -179,7 +195,9 @@
           "checksum": "SHA-256:d246ddcb1867cfcc121b34ad0c82457929f9a9ce37fc2f12cfcc2a73a820f173",
           "size": "40227",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -199,7 +217,9 @@
           "checksum": "SHA-256:d32ef357c570b5b74dd303a966e7274a1d7bbc780d241d742c62c238a1b80871",
           "size": "40727",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -219,7 +239,9 @@
           "checksum": "SHA-256:d4fdf2ccd14ce6c755548a88981438dcfc7dcc7580a439a439fd559a887004f4",
           "size": "39238",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -239,7 +261,9 @@
           "checksum": "SHA-256:6f14f35333dfe0cac9a3bc2ceba5daac803260335c32e44a531916d3aa706784",
           "size": "40504",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -259,7 +283,9 @@
           "checksum": "SHA-256:752fe7a5128a784bf58e54949ca0c622e3a77372e167c3e127e6d4d666c7c845",
           "size": "40505",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -279,7 +305,9 @@
           "checksum": "SHA-256:61b45ff57657a408f808aecfa03e7741cb359115d3987eca33743cbc2c65ffc5",
           "size": "40508",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
@@ -299,7 +327,31 @@
           "checksum": "SHA-256:af471875d88c1d3082abf6d430a7845933d5ad0872ad101c872898bee028350a",
           "size": "40843",
           "boards": [
-            { "name": "BYUI eBadge V4" }
+            {
+              "name": "BYUI eBadge V4"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "esp32",
+              "name": "esptool_py",
+              "version": "5.1.0"
+            }
+          ]
+        },
+        {
+          "name": "BYUI eBadge Boards",
+          "architecture": "esp32",
+          "version": "1.0.15",
+          "category": "Contributed",
+          "url": "https://raw.githubusercontent.com/BYU-I-eBadge/byu-i-ebadge.github.io/main/arduino_IDE_support/BYUI-Namebadge-Board-1.0.15.zip",
+          "archiveFileName": "BYUI-Namebadge-Board-1.0.15.zip",
+          "checksum": "SHA-256:ba5e1e0773abf5158fa1bdea3a9488a019e2b62da99c45d5eae43ede9af35b54",
+          "size": "40015",
+          "boards": [
+            {
+              "name": "BYUI eBadge V4"
+            }
           ],
           "toolsDependencies": [
             {
