@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "Frogger",
+      "version": 1,
+      "url": "https://byu-i-ebadge.github.io/apps/frogger.bin",
+      "size": 276400
+    },
+    {
+      "name": "Pacman",
+      "version": 1,
+      "url": "https://byu-i-ebadge.github.io/apps/pacman.bin",
+      "size": 279440
+    },
+    {
+      "name": "Tetris",
+      "version": 1,
+      "url": "https://byu-i-ebadge.github.io/apps/tetris.bin",
+      "size": 276288
+    },
+    {
+      "name": "Demo Programs",
+      "version": 1,
+      "url": "https://byu-i-ebadge.github.io/apps/demo-programs-v4.ino.bin",
+      "size": 1254640
+    }
+  ]
+}
