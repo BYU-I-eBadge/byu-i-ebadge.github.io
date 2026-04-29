@@ -23,6 +23,25 @@
       "version": 1,
       "url": "https://byu-i-ebadge.github.io/apps/demo-programs-v4.ino.bin",
       "size": 1254640
+    },
+    {
+      "name": "MicroPython",
+      "successMessage": "MicroPython flashed successfully!<br><small>MicroPython REPL is now running.<br>Connect via USB Serial (115200 baud) to start coding.</small>",
+      "binaries": [
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/micropython_bl.bin",
+          "address": 0
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/micropython_pt.bin",
+          "address": 32768
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/micropython.bin",
+          "address": 65536
+        }
+      ],
+      "size": 1686240
     }
   ]
 }
