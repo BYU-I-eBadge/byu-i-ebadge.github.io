@@ -30,26 +30,32 @@
       "name": "Frogger",
       "version": 1,
       "url": "https://byu-i-ebadge.github.io/apps/frogger.bin",
-      "size": 276400
+      "size": 276400,
+      "sha256": "8c2c11db8a89a0d7774bd45f5c6d5e522b820220b7b9d447738a24fe2cf126e0",
+      "icon": "https://byu-i-ebadge.github.io/apps/frogger_icon.bin"
     },
     {
       "name": "Pacman",
       "version": 2,
       "url": "https://byu-i-ebadge.github.io/apps/pacman.bin",
       "size": 289696,
-      "sha256": "221c4cfa0b7201cd6e6cb1f5d134692f1f6548ba4a316fbde042d7f135491fb7"
+      "sha256": "221c4cfa0b7201cd6e6cb1f5d134692f1f6548ba4a316fbde042d7f135491fb7",
+      "icon": "https://byu-i-ebadge.github.io/apps/pacman_icon.bin"
     },
     {
       "name": "Tetris",
       "version": 1,
       "url": "https://byu-i-ebadge.github.io/apps/tetris.bin",
-      "size": 276288
+      "size": 276288,
+      "sha256": "dc579f0d67ff7a96c1fa49b6f65e0d21f312e4cc2f96599cc28a9b1119db4224",
+      "icon": "https://byu-i-ebadge.github.io/apps/tetris_icon.bin"
     },
     {
       "name": "Power-On Demos",
       "version": 1,
       "url": "https://byu-i-ebadge.github.io/apps/demo-programs-v4.ino.bin",
-      "size": 1254640
+      "size": 1254640,
+      "sha256": "3c994eabc1ba009cba93b099d0918da65228b0dc8257933f2eb8e00ede38b721"
     }
   ]
 }
