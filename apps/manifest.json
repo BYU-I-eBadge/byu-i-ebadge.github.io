@@ -20,6 +20,13 @@
       "size": 1686240
     },
     {
+      "name": "Friends Around Me",
+      "version": 1,
+      "url": "https://byu-i-ebadge.github.io/apps/friends_around_me.bin",
+      "size": 563184,
+      "sha256": "c4ad98da3874c7e81a7d955450edf787358ce915079f51b6d54033ce9fe90310"
+    },
+    {
       "name": "Frogger",
       "version": 1,
       "url": "https://byu-i-ebadge.github.io/apps/frogger.bin",
@@ -27,9 +34,10 @@
     },
     {
       "name": "Pacman",
-      "version": 1,
+      "version": 2,
       "url": "https://byu-i-ebadge.github.io/apps/pacman.bin",
-      "size": 289696
+      "size": 289696,
+      "sha256": "221c4cfa0b7201cd6e6cb1f5d134692f1f6548ba4a316fbde042d7f135491fb7"
     },
     {
       "name": "Tetris",
