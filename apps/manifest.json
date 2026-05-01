@@ -21,10 +21,28 @@
     },
     {
       "name": "Friends Around Me",
-      "version": 1,
-      "url": "https://byu-i-ebadge.github.io/apps/friends_around_me.bin",
-      "size": 563184,
-      "sha256": "c4ad98da3874c7e81a7d955450edf787358ce915079f51b6d54033ce9fe90310"
+      "version": 2,
+      "url": "https://byu-i-ebadge.github.io/apps/friends.bin",
+      "size": 563584,
+      "sha256": "30f19aeb30524685c74450193b47f8a9faa4d4383140b0579cce0a7266c0f07d",
+      "binaries": [
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/friends_bl.bin",
+          "address": 0
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/friends_pt.bin",
+          "address": 32768
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/friends_ota_data.bin",
+          "address": 61440
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/friends.bin",
+          "address": 131072
+        }
+      ]
     },
     {
       "name": "Frogger",
