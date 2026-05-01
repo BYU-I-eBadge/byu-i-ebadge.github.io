@@ -36,10 +36,10 @@
     },
     {
       "name": "Pacman",
-      "version": 3,
+      "version": 4,
       "url": "https://byu-i-ebadge.github.io/apps/pacman.bin",
-      "size": 289600,
-      "sha256": "ccef7bdd7ba30f8906e3a83019b77d877db229011f8983458e5989909b70c389",
+      "size": 298896,
+      "sha256": "f9f4e54a0c84473ddc61b414b514ec60f1958c543fce05268b692b6a4f48eaae",
       "binaries": [
         {
           "url": "https://byu-i-ebadge.github.io/apps/pacman_bl.bin",
