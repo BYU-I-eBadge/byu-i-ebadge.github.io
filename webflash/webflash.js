@@ -28,6 +28,10 @@ const programManifestUrl = 'https://byu-i-ebadge.github.io/apps/manifest.json';
 // The web flasher writes exactly what the manifest says; no hardcoded addresses.
 const OTADATA_ADDR   = 0xF000;
 const OTADATA_SIZE   = 0x2000;   // 8 KB (2 × 4 KB sectors)
+const OTA_0_ADDR     = 0x160000;
+const OTA_0_SIZE     = 0x140000; // 1.25 MB — student app slot A
+const OTA_1_ADDR     = 0x2A0000;
+const OTA_1_SIZE     = 0x140000; // 1.25 MB — student app slot B
 const USER_DATA_ADDR = 0x3E0000;
 const USER_DATA_SIZE = 0x20000;  // 128 KB
 
@@ -35,6 +39,23 @@ let bootloaderList = [];
 let bootloaderEntries = null;  // [{binary: ArrayBuffer, address: number}, ...]
 let programList = [];
 let programEntries = null;     // [{binary: ArrayBuffer, address: number}, ...]
+
+function getProgramPriority(entry) {
+  const name = String(entry?.name || entry?.title || '').trim().toLowerCase();
+  if (name === 'friends around me') return 0;
+  if (name === 'micropython') return 1;
+  return 2;
+}
+
+function applyProgramOrdering(list) {
+  return list
+    .map((entry, idx) => ({ entry, idx }))
+    .sort((a, b) => {
+      const rankDiff = getProgramPriority(a.entry) - getProgramPriority(b.entry);
+      return rankDiff !== 0 ? rankDiff : a.idx - b.idx;
+    })
+    .map(item => item.entry);
+}
 
 
 const keepUserDataCheckbox = document.getElementById('keepUserData');
@@ -235,6 +256,8 @@ async function performFlash(fileEntries, label, { eraseUserData = false, clearOt
       fileArray.push({ data: new Uint8Array(OTADATA_SIZE).fill(0xFF), address: OTADATA_ADDR });
     }
     if (eraseUserData) {
+      fileArray.push({ data: new Uint8Array(OTA_0_SIZE).fill(0xFF),     address: OTA_0_ADDR });
+      fileArray.push({ data: new Uint8Array(OTA_1_SIZE).fill(0xFF),     address: OTA_1_ADDR });
       fileArray.push({ data: new Uint8Array(USER_DATA_SIZE).fill(0xFF), address: USER_DATA_ADDR });
     }
 
@@ -305,6 +328,7 @@ async function fetchProgramManifest() {
     } else {
       programList = [];
     }
+    programList = applyProgramOrdering(programList);
     populateProgramDropdown();
     programSelect.disabled = false;
     if (programList.length > 0) {
