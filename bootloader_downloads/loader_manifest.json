@@ -45,5 +45,25 @@
     ],
     "size": 1141568,
     "sha256": "a838b8362063069a35d96e74157f358d8b04bc8cbeea8fcfa1d4a508e7ea6da5"
+  },
+  {
+    "hw_version": 4,
+    "loader_version": 4,
+    "binaries": [
+      {
+        "url": "https://byu-i-ebadge.github.io/bootloader_downloads/badge_bootloader_v4.4_bl.bin",
+        "address": 0
+      },
+      {
+        "url": "https://byu-i-ebadge.github.io/bootloader_downloads/badge_bootloader_v4.4_pt.bin",
+        "address": 32768
+      },
+      {
+        "url": "https://byu-i-ebadge.github.io/bootloader_downloads/badge_bootloader_v4.4.bin",
+        "address": 131072
+      }
+    ],
+    "size": 1141568,
+    "sha256": "6686cd5f154efa3f98262123cb0f590ff1acacf280c9ac4605d789ea27f91366"
   }
 ]
