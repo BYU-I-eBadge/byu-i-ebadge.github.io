@@ -21,10 +21,10 @@
     },
     {
       "name": "Friends Around Me",
-      "version": 12,
+      "version": 13,
       "url": "https://byu-i-ebadge.github.io/apps/friends.bin",
-      "size": 562464,
-      "sha256": "a75c80dc0802cbd848500c6617dcac9c7a9207fb2881554c460178cc73aaf216",
+      "size": 561936,
+      "sha256": "c3475e2468bc7723c3ef2725eb2e69fde0a6a94abe43f29d6e9dfbd867d076b0",
       "binaries": [
         {
           "url": "https://byu-i-ebadge.github.io/apps/friends_bl.bin",
