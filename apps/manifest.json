@@ -46,10 +46,24 @@
     },
     {
       "name": "Frogger",
-      "version": 1,
+      "version": 2,
       "url": "https://byu-i-ebadge.github.io/apps/frogger.bin",
-      "size": 276400,
-      "sha256": "8c2c11db8a89a0d7774bd45f5c6d5e522b820220b7b9d447738a24fe2cf126e0",
+      "size": 288576,
+      "sha256": "d09fc9f7cdf94585ded1f204b48dc28ecc7cac1bc5f04d033082788111c3280f",
+      "binaries": [
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/frogger_bl.bin",
+          "address": 0
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/frogger_pt.bin",
+          "address": 32768
+        },
+        {
+          "url": "https://byu-i-ebadge.github.io/apps/frogger.bin",
+          "address": 65536
+        }
+      ],
       "icon": "https://byu-i-ebadge.github.io/apps/frogger_icon.bin"
     },
     {
