@@ -46,10 +46,10 @@
     },
     {
       "name": "Frogger",
-      "version": 25,
+      "version": 26,
       "url": "https://byu-i-ebadge.github.io/apps/frogger.bin",
       "size": 298064,
-      "sha256": "963368a89cac7746b5d58dd26412f31910efe1b99a56bc9861ed81ff5c83a7e4",
+      "sha256": "4afb656d0e097ebd886e4a16d664a17fe763f35dbfdaa538f5da61419ac9c7f1",
       "binaries": [
         {
           "url": "https://byu-i-ebadge.github.io/apps/frogger_bl.bin",
