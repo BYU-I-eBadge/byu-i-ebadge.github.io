@@ -90,10 +90,10 @@
     },
     {
       "name": "Tetris",
-      "version": 2,
+      "version": 3,
       "url": "https://byu-i-ebadge.github.io/apps/tetris.bin",
       "size": 297696,
-      "sha256": "789bdc41d414a12601b1f9964da71f2b468b535d2c6f8f5b9977c83f79bbe49b",
+      "sha256": "3c845517a1f3b7cf31a64ebfee119d6f9a62055acbea7fa48a98e46f9a457edb",
       "icon": "https://byu-i-ebadge.github.io/apps/tetris_icon.bin"
     },
     {
