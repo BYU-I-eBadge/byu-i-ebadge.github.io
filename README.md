@@ -8,6 +8,9 @@ Github Pages for the BYU-I e-Badge Project
 
 
 ## Tutorials:
+## WebFlasher:
+This allows flashing the board directly from a webpage:
+- [WebFlash](https://byu-i-ebadge.github.io/namebadge-webflash/)
 
 ### Minibadge Tutorials:
 - [LED Tutorial](/minibadge_tutorial/tutorial)
